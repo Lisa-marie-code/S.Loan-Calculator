@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAN PLAN</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h2>LOAN CALCULATOR</h2>
+    <div class="loanform">
+       <form action="">
+           <div class="loan">
+               <label for="Amount">LOAN AMOUNT :  GHC</label>
+               <input type="number" id= "my_amount" placeholder="Enter your Amount" onchange="calcLoan()">
+           </div>
+           <div class="interest">
+               <label for="Int">INTEREST :  %</label>
+               <input type="number" id="int" onchange="calcLoan()">
+           </div>
+           <div class="month">
+               <label for="month">MONTHS REQUIRED :</label>
+               <input type="number" id="my_month" onchange="calcLoan()" >
+           </div>
+           <div class="plan" id="monplan">
+               <label for="pay">MONTHLY PAYMENTS :<span id="payments"></span> </label>
+           </div>
+           <button id="cloan" type="submit" >CALCULATE</button>
+           <button id="delete" type="submit" onclick="clear()" >CLEAR</button>
+       </form>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
